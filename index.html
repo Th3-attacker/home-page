@@ -11,6 +11,9 @@
           extend: {
             colors: {
               darkblue: "#00001A",
+              yellow: '#E9AB53',
+              pink:'#F15E50',
+              black: '#000000'
             },
             fontFamily: {
               inter: ['"Inter", sans-serif'],
@@ -23,7 +26,7 @@
   <body
     class="container font-inter mx-auto p-8 lg:p-20 min-w-[375px] max-w-[1440px] min-h-[150px] max-h-[300px]"
   >
-    <header class="lg:mb-8">
+    <header class="sticky top-0 flex flex-row items-center justify-between w-min-full md:w-1200 h-16 md:h-20 px-4 md:px-0 z-50 bg-opacity-70 backdrop-filter backdrop-blur-30 bg-white">
       <nav class="container mx-auto py-4 flex justify-between items-center">
         <!-- Logo -->
         <div>
@@ -37,11 +40,11 @@
 
         <!-- Navigation Links -->
         <ul id="menu" class="hidden lg:flex text-xl lg:space-x-6 text-gray-600">
-          <li class="hover:text-red-400"><a href="#" class="">Home</a></li>
-          <li class="hover:text-red-400"><a href="#">New</a></li>
-          <li class="hover:text-red-400"><a href="#">Popular</a></li>
-          <li class="hover:text-red-400"><a href="#">trending</a></li>
-          <li class="hover:text-red-400"><a href="#">Categories</a></li>
+          <li class="hover:text-yellow text-xl"><a href="#">Home</a></li>
+          <li class="hover:text-yellow text-xl"><a href="#">New</a></li>
+          <li class="hover:text-yellow text-xl"><a href="#">Popular</a></li>
+          <li class="hover:text-yellow text-xl"><a href="#">trending</a></li>
+          <li class="hover:text-yellow text-xl"><a href="#">Categories</a></li>
         </ul>
 
         <!-- Hamburger Menu (visible on mobile) -->
@@ -103,8 +106,8 @@
           src="./assets/images/image-web-3-desktop.jpg"
           class="hidden md:block"
         />
-        <div class="lg:flex lg:justify-around lg:space-x-24 lg:pt-6">
-          <h1 class="text-5xl font-bold pt-2 text-darkblue">
+        <div class="lg:flex lg:justify-around lg:space-x-20 lg:pt-6">
+          <h1 class="text-3xl md:text-4xl xl:text-5xl font-extrabold tracking-normal">
             The Bright Future of web 3.0?
           </h1>
           <p class="text-gray-400 text-base pt-2">
@@ -113,7 +116,7 @@
             really fulfilling its promise?
             <br />
             <button
-              class="hover:bg-darkblue lg:mt-8 tracking-[.45em] uppercase bg-red-400 text-sm font-semibold text-white px-8 py-3 mt-2 mb-2"
+              class="hover:bg-darkblue lg:mt-8 tracking-[.45em] uppercase bg-pink text-sm font-semibold text-white px-8 py-3 mt-2 mb-2"
             >
               read more
             </button>
@@ -121,9 +124,9 @@
         </div>
       </section>
       <aside class="bg-darkblue text-white p-2 mb-20 lg:w-2/6 lg:space-y-12">
-        <h1 class="text-yellow-400 text-5xl mb-8">New</h1>
+        <h1 class="text-yellow text-5xl mb-8 font-bold">New</h1>
         <div class="border-b">
-          <h2 class="text-2xl font-bold mt-1 hover:text-yellow-400">
+          <h2 class="text-2xl font-bold mt-1 hover:text-yellow">
             Hydrogen VS Electric Cars
           </h2>
           <p class="mt-2 mb-8">
@@ -131,7 +134,7 @@
           </p>
         </div>
         <div class="border-b mt-8">
-          <h2 class="text-2xl font-bold mt-1 hover:text-yellow-400">
+          <h2 class="text-2xl font-bold mt-1 hover:text-yellow">
             The Downsides of AI Artisty
           </h2>
           <p class="mt-2 mb-8">
@@ -140,7 +143,7 @@
           </p>
         </div>
         <div class="mt-8">
-          <h2 class="text-2xl font-bold mt-1 hover:text-yellow-400">
+          <h2 class="text-2xl font-bold mt-1 hover:text-yellow">
             Is VC Funding Drying Up?
           </h2>
           <p class="mt-2 mb-8">
@@ -161,7 +164,7 @@
         />
         <div>
           <h1 class="text-3xl text-gray-200 font-semibold mb-2">01</h1>
-          <h2 class="text-xl font-bold mb-2 hover:text-red-400">
+          <h2 class="text-xl font-bold mb-2 hover:text-pink">
             Reviving Retro PCs
           </h2>
           <p class="text-gray-400">
@@ -179,7 +182,7 @@
         />
         <div>
           <h1 class="text-3xl text-gray-200 font-semibold mb-2">02</h1>
-          <h2 class="text-xl font-bold mb-2 hover:text-red-400">
+          <h2 class="text-xl font-bold mb-2 hover:text-pink">
             Top 10 Laptops of 2022
           </h2>
           <p class="text-gray-400">
@@ -197,7 +200,7 @@
         />
         <div>
           <h1 class="text-3xl text-gray-200 font-semibold mb-2">03</h1>
-          <h2 class="text-xl font-bold mb-2 hover:text-red-400">
+          <h2 class="text-xl font-bold mb-2 hover:text-pink">
             The Growth of Gaming
           </h2>
           <p class="text-gray-400">
