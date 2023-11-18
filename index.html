@@ -8,6 +8,9 @@
     <script>
       tailwind.config = {
         theme: {
+          fontWeight: {
+            extra: "910",
+          },
           extend: {
             colors: {
               darkblue: "#00001A",
@@ -25,14 +28,23 @@
   </head>
   <body class="lg:mx-auto font-inter">
     <header
-      class=" sticky top-0 flex flex-row items-center justify-between w-full mx-auto h-16 md:h-20 py-12 z-50 bg-opacity-70 bg-white backdrop-blur-xl bg-white"
+      class="sticky top-0 flex flex-row items-center justify-between w-full mx-auto h-16 md:h-20 py-12 z-50 bg-opacity-70 bg-white backdrop-blur-xl bg-white"
     >
-      <nav class="container mx-auto py-4 px-4 flex justify-between items-center">
+      <nav
+        class="container mx-auto py-4 px-4 flex justify-between items-center"
+      >
         <!-- logo -->
-        <img src="./assets/images/logo.svg" class="h-7 w:12 lg:h-10 lg:w-20" alt="" />
+        <img
+          src="./assets/images/logo.svg"
+          class="h-7 w:12 lg:h-10 lg:w-20"
+          alt=""
+        />
 
         <!-- Navigation Links -->
-        <ul id="menu" class="hidden bg-white lg:flex text-xl space-x-8 text-gray-600">
+        <ul
+          id="menu"
+          class="hidden bg-white lg:flex text-xl space-x-8 text-gray-600"
+        >
           <li class="hover:text-yellow"><a href="#">Home</a></li>
           <li class="hover:text-yellow"><a href="#">New</a></li>
           <li class="hover:text-yellow"><a href="#">Popular</a></li>
@@ -80,7 +92,9 @@
       </nav>
     </header>
     <!-- main  -->
-    <main class="block lg:flex px-4 lg:flex-row mx-auto lg:space-x-10 container">
+    <main
+      class="block lg:flex px-4 lg:flex-row mx-auto lg:space-x-10 container"
+    >
       <!-- section  -->
       <section class="lg:w-4/6">
         <img
@@ -93,7 +107,7 @@
         />
         <div class="lg:flex lg:justify-around lg:space-x-20 space-y-4 lg:pt-10">
           <h1
-            class=" text-4xl md:text-4xl lg:text-6xl font-black tracking-normal"
+            class="text-5xl md:text-4xl lg:text-6xl  font-extra tracking-normal"
           >
             The Bright Future of web 3.0?
           </h1>
@@ -103,7 +117,7 @@
             really fulfilling its promise?
             <br />
             <button
-              class="hover:bg-darkblue lg:mt-8 tracking-[.35em] uppercase bg-pink text-base  text-white px-8 py-3 mt-4 mb-2"
+              class="hover:bg-darkblue lg:mt-8 tracking-[.35em] uppercase bg-pink text-base text-white px-8 py-3 mt-4 mb-2"
             >
               read more
             </button>
@@ -130,7 +144,7 @@
             generation?
           </p>
         </div>
-        <div class="py-7  space-y-4">
+        <div class="py-7 space-y-4">
           <h2 class="text-xl font-bold mt-1 hover:text-yellow">
             Is VC Funding Drying Up?
           </h2>
@@ -142,7 +156,9 @@
       </aside>
     </main>
     <!-- section images -->
-    <div class="container mb-8 px-4 lg:flex mx-auto lg:justify-between lg:space-x-2">
+    <div
+      class="container mb-8 px-4 lg:flex mx-auto lg:justify-between lg:space-x-2"
+    >
       <div class="flex items-center mb-8">
         <img
           src="./assets/images/image-retro-pcs.jpg"
